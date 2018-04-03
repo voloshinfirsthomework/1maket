@@ -183,10 +183,21 @@
 
 			<section title="Форма отзыва" class="form">
 				<form action="" class="form__feed">
+
 					<h2 class="form__h2">Оставить отзыв</h2>
-					<input class="form__name" type="text"  placeholder="Андрей">
-					<input class="form__name form__name--vk" type="text"  placeholder="vk.com/examle">
-					<textarea class="form__name form__name--area" type="" placeholder="Мне понравилось"></textarea>	
+
+					<div class="form__block">
+						<label class="form__label" for="name">Ваше имя</label><br>
+						<input class="form__name" type="text" id="name"  placeholder="Андрей">
+					</div>
+					<div class="form__block form__block-right">
+						<label class="form__label" for="vk-link">Ссылка на профиль VK</label><br>
+						<input class="form__name form__name--vk" type="text" id="vk-link" placeholder="vk.com/examle">
+					</div>
+					<label class="form__label form__label--area" for="feed">Текст отзыва</label><br>
+					<textarea class="form__name form__name--area" type="" id="feed" placeholder="Мне понравилось">
+						
+					</textarea>	
 					<h3 class="form__h3">Загружать отзыв с фото?</h3>
 
 					<input class="form__radio" type="radio" name="radio"><span class="form__radio-word">Да</span>
