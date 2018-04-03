@@ -677,6 +677,7 @@ body {
     
 .form {
   width: 100%;
+  margin-bottom: 50px;
 }
 .form__h2 {
   font-size: 49px;
@@ -687,6 +688,7 @@ body {
   margin-bottom: 26px;
 }
 .form__feed {
+  position: relative;
   margin: 0 auto;
   padding-top: 50px;
   padding-left: 70px;
@@ -704,10 +706,12 @@ body {
   padding-left: 8px;
   box-sizing: border-box;
   margin-bottom: 40px;
+  display: inline-block;
 }
 .form__name--vk {
   margin-left: 20px;
 }
+
 .form__name--area {
   width: 561px;
   height: 90px;
@@ -721,6 +725,21 @@ body {
   font-size: 14px;
   color: rgb(34, 31, 31);
 }
+.form__radio {
+  vertical-align: middle;
+  margin-bottom: 20px;
+}
+.form__radio--no {
+  margin-left: 20px;
+}
+.form__radio-word {
+  font-weight: 300;
+  font-size: 14px;
+  color: rgb(34, 31, 31);
+  vertical-align: middle;
+  margin-left: 5px;
+}
+
 .form__button {
   width: 154px;
   height: 45px;
@@ -732,6 +751,9 @@ body {
   font-weight: bold;
   font-size: 12px;
   display: inline-block;
+  position: absolute;
+  top: 311px;
+  left: 476px;
 }
 .form__img-button {
   vertical-align: middle;
@@ -742,7 +764,7 @@ body {
   margin-left: 10px;
   box-sizing: border-box
 }
-.form__word {
+.form__word-button {
   display: inline-block;
   vertical-align: middle;
   
