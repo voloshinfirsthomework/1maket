@@ -130,6 +130,7 @@ body {
   font-size: 14px;
   color: rgba(255, 255, 255, .7);
   text-decoration: underline;
+  position: relative;
   
   
 }
@@ -138,6 +139,68 @@ body {
   text-decoration: none;
   color: #ffffff;
 }
+
+.contacts__dropdow:hover .dropdown {
+  top: -11px;
+}
+
+
+/*выпадашка*/
+
+
+.dropdown__time, .dropdown__dinner {
+  margin: 0px;
+  display: inline-block;
+  line-height: 30px;
+}
+.dropdown__time {
+  font-size: 14px;
+  color: rgb(28, 91, 195);
+  font-weight: bold;
+}
+.dropdown__dinner {
+  font-size: 14px;
+  color: rgb(34, 31, 31);
+  font-weight: 300;
+}
+.dropdown {
+  position: absolute;
+  /*top: 30px;*/
+  top: 9999px;
+}
+
+.dropdown__wrap {
+  width: 163px;
+  height: 70px;
+  background: rgb(255,255,255);
+  border-radius: 6px;
+  top: 50px;
+  position: relative;
+  padding-top: 5px;
+  padding-left: 22px;
+  text-align: left;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.2);
+  }
+
+  .dropdown__triangel {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+      position: absolute;
+      width: 18px;
+      height: 18px;
+      background: rgb(255,255,255);
+      bottom: 100%;
+      transform: rotate(45deg);
+      margin-bottom: -9px;
+    left: 100%;
+    margin-left: -26px;
+  }
+
+  /*хлебные крошки*/
 
 .breadcrumbs {
   font-weight: 300;
@@ -308,9 +371,9 @@ body {
     height: 454px;
     border-radius: 5px;
     padding-top: 40px;
-    /*vertical-align: middle;*/
+    
     box-sizing: border-box;
-    border: 1px solid none;
+    border: 1px solid rgba(14, 186, 197, .0);
   }
   .rates__item:hover {
     border: 1px solid #0ebac5;
@@ -565,14 +628,16 @@ body {
   padding: 0;
   padding-top: 8px;
 }
-
+.footer__link-social:hover {
+  box-shadow: 0 0 15px rgba(0,0,0,0.9);
+}
 .footer__link-social {
   display: block;
   width: 20px;
   height: 20px;
-  
   border-radius: 50%;
 }
+
 
 .footer__link-social--vk {
   background: url(../img/footer/vk.png) center center no-repeat #ffffff;
@@ -774,19 +839,40 @@ body {
   font-size: 14px;
   color: rgb(34, 31, 31);
 }
-.form__radio {
-  vertical-align: middle;
-  
+.label {
+  position: relative;
 }
-.form__radio--no {
+.label--right {
   margin-left: 20px;
 }
-.form__radio-word {
+.radio{
+  position: absolute;
+  left: -3000px;
+}
+.text {
   font-weight: 300;
   font-size: 14px;
   color: rgb(34, 31, 31);
+}
+.check {
+  width: 18px;
+  height: 18px;
+  border: 1px solid rgb(201, 201, 201);
+  border-radius: 50%;
+  display: inline-block;
   vertical-align: middle;
-  margin-left: 5px;
+}
+.text {
+  vertical-align: middle;
+}
+
+.radio--yes:checked + .check--yes {
+  border: 1px solid rgb(75, 115, 181);
+  background: url(../img/radio/rad.png) center center no-repeat;
+}
+.radio--no:checked + .check--no {
+  border: 1px solid rgb(75, 115, 181);
+  background: url(../img/radio/rad.png) center center no-repeat;
 }
 
 .form__button {

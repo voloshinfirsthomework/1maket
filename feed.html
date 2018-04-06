@@ -29,7 +29,15 @@
 					<div class="head__col head__col--right">
 						<div class="contacts">
 							<a href="tel: +78000039210" class="contacts__telefon">8(800)00-392-10</a>
-							<div class="contacts__dropdow">График работы</div>
+							<div class="contacts__dropdow">График работы
+								<section title="график работы" class="dropdown">
+									<div class="dropdown__wrap">
+										<div class="dropdown__triangel"></div>
+										<h3 class="dropdown__time">пн-вс: 09:00-20:00</h3>
+										<h3 class="dropdown__dinner">обед: 14:00-14:30</h3>
+									</div>
+								</section>
+							</div>
 						</div>
 						</div>
 				</div>			
@@ -69,7 +77,7 @@
 					<nav class="breadcrumbs">
 						<ul class="breadcrumbs__list">
 							<li class="breadcrumbs__item">
-									<a href="#" class="breadcrumbs__link">Главная</a>
+									<a href="index.html" class="breadcrumbs__link">Главная</a>
 							</li>
 							<li class="breadcrumbs__item">
 									<span  class="breadcrumbs__link breadcrumbs__link--active">Отзывы</span>
@@ -188,21 +196,29 @@
 
 					<div class="form__block">
 						<label class="form__label" for="name">Ваше имя</label><br>
-						<input class="form__name" type="text" id="name"  placeholder="Андрей">
+						<input class="form__name" type="text" id="name"  placeholder="Андрей"  tabindex="1">
 					</div>
 					<div class="form__block form__block-right">
 						<label class="form__label" for="vk-link">Ссылка на профиль VK</label><br>
-						<input class="form__name form__name--vk" type="text" id="vk-link" placeholder="vk.com/examle">
+						<input class="form__name form__name--vk" type="text" id="vk-link" placeholder="vk.com/examle"  tabindex="2">
 					</div>
 					<label class="form__label form__label--area" for="feed">Текст отзыва</label><br>
-					<textarea class="form__name form__name--area" type="" id="feed" placeholder="Мне понравилось">
+					<textarea class="form__name form__name--area" type="" id="feed" tabindex="3">Мне понравилось
 						
 					</textarea>	
 					<h3 class="form__h3">Загружать отзыв с фото?</h3>
 
-					<input class="form__radio" type="radio" name="radio"><span class="form__radio-word">Да</span>
-					<input class="form__radio form__radio--no" type="radio" name="radio"><span class="form__radio-word">Нет</span>
-					<button class="form__button" type="submit">
+					<label class="label" for="yes">
+						<input class="radio radio--yes" type="radio" name="radio" id="yes">
+						<span class="check check--yes" tabindex="4"></span>
+						<span class="text">Да</span>
+					</label>
+					<label class="label label--right" for="no">
+						<input class="radio radio--no" type="radio" name="radio" id="no">
+						<span class="check check--no" tabindex="5"></span>
+						<span class="text text--no">Нет</span>
+					</label>
+					<button class="form__button" type="submit" tabindex="6">
 						<span class="form__word-button">Отпраить</span>
 						<div class="form__img-button"></div> 
 					</button>
